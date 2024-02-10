@@ -1,0 +1,31 @@
+import TradingView/ta/7
+//@version=5
+strategy(title = "trading-bot", shorttitle = "trading-bot", overlay = true, format = format.price,
+     default_qty_type = strategy.cash, default_qty_value = 10000, initial_capital = 10000, currency = currency.USDT,
+     slippage = 0, commission_type = strategy.commission.percent, commission_value = 0)
+
+// INPUT BACKTEST RANGE
+i_from = input.time(defval = timestamp("07 Feb 2024 00:00 +0000"), title = "From")
+i_thru = input.time(defval = timestamp("11 Feb 2024 00:00 +0000"), title = "Thru")
+
+// INPUT SHOW PLOT
+i_show = input(defval = true, title = "Show Date Range")
+
+
+date() => time >= i_from and time <= i_thru  // create date function "within window of time"
+
+ema_value = ta.ema(close, 1) // calculate EMA
+
+// EXECUTION
+if date() 
+    strategy.entry("Long", strategy.long)
+
+profit = strategy.position_avg_price * 1.001
+
+if strategy.position_size > 0 // If position is long
+    if ema_value > profit// exit if price is 0.1% above entry price
+        strategy.close("Long") // Close long position
+
+// PLOTTING
+bgcolor(color = i_show and date() ? color.new(color.gray, 90) : na)  // plot if "Show Date Range" and "within window of time"
+
