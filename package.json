@@ -1,0 +1,13 @@
+{
+  "name": "trading-bot",
+  "version": "v0.1.0-alpha",
+  "description": "🤖 Trading bot for trading view pine script",
+  "main": "trading-bot.pine",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+		"name": "@FedeHide"
+	},
+  "license": "MIT"
+}
