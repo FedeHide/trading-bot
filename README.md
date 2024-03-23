@@ -3,7 +3,7 @@
 > [!CAUTION] 
 > This is a personal use trading bot. It is considered high-risk and still in the development phase, so I **DON'T** recommend using it at all. ⚠️
 
-![TradingView trading bot](./images/trading-bot-backtest.webp "TradingView trading bot")
+![TradingView trading bot](https://raw.githubusercontent.com/FedeHide/trading-bot/main/images/trading-bot-backtest.webp "TradingView trading bot")
 
 ## Description
 
