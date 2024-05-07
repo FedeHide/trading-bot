@@ -1,7 +1,7 @@
 # Trading Bot | TradingView
 
 > [!CAUTION] 
-> This is a personal use trading bot. It is considered high-risk and still in the development phase, so I **DON'T** recommend using it at all. ⚠️
+> Remember, Cryptocurrency trading is highly volatile. Proceed with caution and stay informed to mitigate risks. Exercise prudent decision-making and approach with care. ⚠️
 
 ![TradingView trading bot](https://raw.githubusercontent.com/FedeHide/trading-bot/main/images/trading-bot-backtest.webp "TradingView trading bot")
 
