@@ -1,0 +1,89 @@
+# production
+/build
+#dist/
+NOTES.md
+
+# dependencies
+/node_modules
+pnpm-lock.yaml
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# debug logs
+logs
+*.log
+lerna-debug.log*
+pnpm-debug.log*
+pnpm-error.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# env files
+.env
+.env*.local
+.env.production
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
+
+# prisma db
+prisma/dev.db
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.vscode-test
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# misc
+*.pem
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Compiled binary addons
+build/Release
+
+# eslint cache
+.eslintcache
